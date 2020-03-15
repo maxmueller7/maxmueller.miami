@@ -4,5 +4,5 @@
  * React.JS
  * Redux
  * React Router
- * Material UI
+ * Bootstrap + Styled Components
  * React Testing Library
