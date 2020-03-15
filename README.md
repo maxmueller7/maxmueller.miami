@@ -3,5 +3,6 @@
  I built this site as my personal portfolio site. The technologies I used are:
  * React.JS
  * Redux
- * Material UI
+ * React Router
+ * Bootstrap + Styled Components
  * React Testing Library
