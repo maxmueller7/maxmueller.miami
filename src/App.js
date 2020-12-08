@@ -1,5 +1,4 @@
 import './App.scss';
-import profilePic from './assets/profilePic.JPG';
 
 function App() {
   return (
