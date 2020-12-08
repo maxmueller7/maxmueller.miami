@@ -1,17 +1,14 @@
-import React from 'react';
-import Home from './components/pages/Home';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/layouts/Navbar';
-import Footer from './components/layouts/Footer';
+import './App.scss';
+import profilePic from './assets/profilePic.JPG';
 
 function App() {
   return (
-    <>
-    <Navbar/>
-    <Home />
-    <Footer/>
-    </>
+    <div className='App'>
+      <header className='App-header'>
+        Hi there, I'm Max. You reached my site. <br />
+        You can get in contact with me via e-mail, maxmuellerinquiries@gmail.com
+      </header>
+    </div>
   );
 }
 
