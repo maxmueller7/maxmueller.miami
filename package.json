@@ -1,5 +1,6 @@
 {
-  "name": "max-mueller-site",
+  "name": "Max Mueller's Site",
+  "author": "Max Mueller",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
