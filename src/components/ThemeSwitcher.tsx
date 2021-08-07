@@ -1,7 +1,8 @@
-import React, { FC, useState, cloneElement } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import { Box, Button, useColorMode, Paragraph, Image } from 'theme-ui';
 import { Countries, Flags, ICountryToFlag } from 'utils';
 
+//TODO: build this dynamically
 const countriesToFlags: ICountryToFlag[] = [
   { country: Countries.ARGENTINA, flag: Flags.AR },
   { country: Countries.BAHAMAS, flag: Flags.BS },
@@ -11,7 +12,6 @@ const countriesToFlags: ICountryToFlag[] = [
   { country: Countries.ITALY, flag: Flags.IT },
   { country: Countries.JAMAICA, flag: Flags.JM },
   { country: Countries.JAPAN, flag: Flags.JP },
-  { country: Countries.MEXICO, flag: Flags.MX },
   { country: Countries.QATAR, flag: Flags.QA },
   { country: Countries.SOUTHAFRICA, flag: Flags.ZA },
   { country: Countries.UGANDA, flag: Flags.UG },
@@ -22,6 +22,11 @@ const countriesToFlags: ICountryToFlag[] = [
 export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
   const [countryMode, setCountryMode] = useColorMode();
   const [flagMode, setFlagMode] = useState('US');
+
+  useEffect(() => {
+    setCountryMode(Countries.USA);
+    setFlagMode(Flags.US);
+  }, []);
 
   return (
     <Box

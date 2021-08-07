@@ -7,12 +7,11 @@ export enum Countries {
   ITALY = 'italy',
   JAMAICA = 'jamaica',
   JAPAN = 'japan',
-  MEXICO = 'mexico',
   QATAR = 'qatar',
   SOUTHAFRICA = 'southAfrica',
   UGANDA = 'uganda',
   UKRAINE = 'ukraine',
-  USA = 'usa',
+  USA = 'unitedStates',
 }
 
 export enum Flags {
@@ -24,7 +23,6 @@ export enum Flags {
   IT = 'IT',
   JM = 'JM',
   JP = 'JP',
-  MX = 'MX',
   QA = 'QA',
   ZA = 'ZA',
   UG = 'UG',

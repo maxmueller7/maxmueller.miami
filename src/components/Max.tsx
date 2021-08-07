@@ -5,7 +5,7 @@ export const Max: FC<{}> = (): JSX.Element => {
   return (
     <Box
       sx={{
-        bg: 'secondary',
+        bg: 'background',
         borderRadius: '2px',
         fontSize: 3,
         margin: 'auto',
@@ -20,7 +20,7 @@ export const Max: FC<{}> = (): JSX.Element => {
         I'm a Software Engineer.
       </Paragraph>
       <Link
-        sx={{ color: 'primary', bg: 'secondary', textDecoration: 'none' }}
+        sx={{ color: 'primary', bg: 'background', textDecoration: 'none' }}
         href='/'
       >
         Link example

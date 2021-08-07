@@ -1,4 +1,6 @@
-export default {
+import { Theme } from 'theme-ui';
+
+export const theme: Theme = {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
     body: '"Josefin Sans", sans-serif',
@@ -25,7 +27,7 @@ export default {
     muted: '#f6f6f6',
     modes: {
       argentina: {
-        text: '#fff',
+        text: '#f6b40e',
         background: '#fff',
         primary: '#f6b40e',
         secondary: '#74acdf',

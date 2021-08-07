@@ -1,9 +1,10 @@
+import React from 'react';
 import { Header } from 'components/Header';
 import { Max } from 'components/Max';
 import { ThemeProvider, Box } from 'theme-ui';
-import theme from './theme';
+import { theme } from './theme';
 
-const App = () => {
+const App = (): JSX.Element => {
   return (
     <div className='App'>
       <ThemeProvider theme={theme}>
