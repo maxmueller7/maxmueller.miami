@@ -1,11 +1,25 @@
-import './App.scss';
+import { Header } from 'components/Header';
+import { Max } from 'components/Max';
+import { ThemeProvider, Box } from 'theme-ui';
+import theme from './theme';
 
-function App() {
+const App = () => {
   return (
     <div className='App'>
-      <body></body>
+      <ThemeProvider theme={theme}>
+        <Box
+          sx={{
+            bg: 'background',
+            height: '100vh',
+            textAlign: 'center',
+          }}
+        >
+          <Header />
+          <Max />
+        </Box>
+      </ThemeProvider>
     </div>
   );
-}
+};
 
 export default App;
