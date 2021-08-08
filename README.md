@@ -24,7 +24,9 @@ I'll be versioning my site based on flags.
 
 ## v1.0.0 Zaire:
 
-![Zaire's Flag](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Flag_of_Zaire_%281971%E2%80%931997%29.svg/1920px-Flag_of_Zaire_%281971%E2%80%931997%29.svg.png "Zaire's Flag")
+<p align='center'>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Flag_of_Zaire_%281971%E2%80%931997%29.svg/1920px-Flag_of_Zaire_%281971%E2%80%931997%29.svg.png" alt="Zaire's Flag" width='50%'/>
+</p>
 The first version will be named after the flag that got me started into Vexillology.
 
 - Init dev and deployment of site.
@@ -39,7 +41,10 @@ The first version will be named after the flag that got me started into Vexillol
 
 ## v2.0.0 Isle of Portland (Jan 2022)
 
-![Isle of Portland's Flag](https://www.flaginstitute.org/wp/wp-content/uploads/flags/UNKG7513.png "Isle of Portland's Flag")
+<p align='center'>
+
+<img src='https://www.flaginstitute.org/wp/wp-content/uploads/flags/UNKG7513.png' alt="Isle of Portland's Flag" width='50%'/>
+</p>
 
 Named after [Dr. Edgar F. Codd](https://en.wikipedia.org/wiki/Edgar_F._Codd)'s place of birth because this release deals with a lot of database stuff.
 
