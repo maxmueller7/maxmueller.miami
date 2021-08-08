@@ -49,11 +49,9 @@ export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
     >
       <Button
         sx={{
-          width: 6,
-          height: 3,
           color: 'primary',
           bg: 'muted',
-          p: 0,
+          p: 1,
         }}
         onClick={(e) => {
           updateCountryAndFlagTheme();
@@ -62,8 +60,8 @@ export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
         <Box
           sx={{
             display: 'flex',
-            justifyContent: 'center',
-            alignContent: 'space-between',
+            justifyContent: 'flex-end',
+            alignContent: 'space-around',
             alignItems: 'center',
           }}
         >
@@ -80,7 +78,7 @@ export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
                 .join(' ')}
           </Paragraph>
           <Image
-            sx={{ width: '30%', height: '30%' }}
+            sx={{ maxHeight: 2 }}
             src={`https://crwflags.com/fotw/images/${flagMode.charAt(
               0
             )}/${flagMode}.gif`}
