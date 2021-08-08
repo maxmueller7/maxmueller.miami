@@ -29,7 +29,7 @@ The first version will be named after the flag that got me started into Vexillol
 
 - Init dev and deployment of site.
 - Themed with Theme-UI, themes are:
-  - Argentina, Bahamas, China, India, Israel, Italy, Jamaica, Japan, Qatar, South Africa, Uganda, Ukraine, and United States.
+  - 🇦🇷, 🇧🇸, 🇨🇳, 🇮🇳, 🇮🇱, 🇮🇹, 🇯🇲, 🇯🇵, 🇶🇦, 🇿🇦, 🇺🇬, 🇺🇦, 🇺🇸.
 - Use i18n to translate 'Hello' into multiple languages.
 - Use <span>countryflags.io</span> for flag icons.
 - Small chart with stats about flags using Ag-grid.
@@ -41,7 +41,7 @@ The first version will be named after the flag that got me started into Vexillol
 
 ![Isle of Portland's Flag](https://www.flaginstitute.org/wp/wp-content/uploads/flags/UNKG7513.png "Isle of Portland's Flag")
 
-Named after Edgar F. Codd's place of birth because this release deals with a lot of database stuff.
+Named after [Dr. Edgar F. Codd](https://en.wikipedia.org/wiki/Edgar_F._Codd)'s place of birth because this release deals with a lot of database stuff.
 
 - Add themes for places I've traveled to and change my picture to a picture of me in that place.
 - Create database (i.e. Firebase).
