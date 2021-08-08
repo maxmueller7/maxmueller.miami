@@ -16,7 +16,7 @@ const countriesToFlags: ICountryToFlag[] = [
   { country: Countries.SOUTHAFRICA, flag: Flags.ZA },
   { country: Countries.UKRAINE, flag: Flags.UA },
   { country: Countries.USA, flag: Flags.US },
-  { country: Countries.ZAIRE, flag: Flags.ZR },
+  { country: Countries.ZAIRE, flag: Flags.CDZR },
 ];
 
 export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
@@ -73,8 +73,10 @@ export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
                 .join(' ')}
           </Paragraph>
           <Image
-            sx={{ display: 'inline' }}
-            src={`https://www.countryflags.io/${flagMode}/flat/64.png`}
+            sx={{ display: 'inline', width: '50%', height: '50%' }}
+            src={`https://crwflags.com/fotw/images/${flagMode.charAt(
+              0
+            )}/${flagMode}.gif`}
           />
         </Box>
       </Button>

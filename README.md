@@ -18,7 +18,7 @@ You're looking at my site because you're a flag lover, and _possibly_ a technica
 
 - I bootstrapped this TypeScript app with [Create React App](https://create-react-app.dev/).
 - I'm using [Theme-UI](https://theme-ui.com/) for theming.
-- I'm getting the flag icons from [countryflags.io](https://www.countryflags.io/) for now. I plan to build my own API in the near future.
+- I'm getting the flag icons from [CRW Flags](https://www.crwflags.com/) for now. I plan to build my own API in the near future.
 
 # Changelog.
 
@@ -36,7 +36,7 @@ Named after [Zaire](https://en.wikipedia.org/wiki/Zaire). I learned about this d
 - Themed with Theme-UI, themes are:
   - 🇦🇷, 🇧🇸, 🇨🇳, 🇮🇳, 🇮🇱, 🇮🇹, 🇯🇲, 🇯🇵, 🇶🇦, 🇿🇦, 🇺🇦, 🇺🇸 and Zaire (no emoji 😭).
 - Use i18n to translate 'Hello' into multiple languages.
-- Use <span>countryflags.io</span> for flag icons.
+- Use [CRW Flags](https://www.crwflags.com/) for flag icons.
 - My picture, resume, and LinkedIn profile.
 - Guess the flag name v1.0.0
   1. Display a flag
@@ -64,21 +64,21 @@ Named after [Dr. Edgar F. Codd](https://en.wikipedia.org/wiki/Edgar_F._Codd)'s p
   - FLAG_COLOR_3 (nullable string)
   - FLAG_COLOR_4 (nullable string)
   - FLAG_COLOR_5 (nullable string)
-  - TRIBAND (boolean)
-  - QUARTERED (boolean)
-  - STRIPES (boolean)
+  - ANIMAL (boolean)
   - CANTON (boolean)
   - CIRCLE (boolean)
   - CRESCENT (boolean)
   - CROSS (boolean)
   - DIAMOND (boolean)
+  - INSCRIPTION (boolean)
+  - OBJECT (boolean)
+  - PLANT (boolean)
+  - QUARTERED (boolean)
   - STARS (boolean)
+  - STRIPES (boolean)
   - SUN (boolean)
   - TRIANGLE (boolean)
-  - ANIMAL (boolean)
-  - PLANT (boolean)
-  - OBJECT (boolean)
-  - INSCRIPTION (boolean)
+  - TRIBAND (boolean)
 
 - Create API for various calls.
 - Guess the flag v2.0.0

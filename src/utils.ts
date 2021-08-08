@@ -27,7 +27,7 @@ export enum Flags {
   UA = 'UA',
   US = 'US',
   ZA = 'ZA',
-  ZR = 'ZR',
+  CDZR = 'CD-ZR',
 }
 
 export interface ICountryToFlag {
