@@ -119,7 +119,7 @@ export const theme: Theme = {
       },
     },
   },
-  sizes: ['0px', '1rem', '2rem', '3rem', '4rem', '8rem', '10rem'],
+  sizes: ['0px', '1rem', '2rem', '3rem', '4rem', '8rem', '10rem', '14rem'],
   styles: {
     root: {
       fontFamily: 'body',

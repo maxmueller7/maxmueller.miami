@@ -3,7 +3,7 @@ import { Box, Button, useColorMode, Paragraph, Image } from 'theme-ui';
 import { Countries, Flags, ICountryToFlag } from 'utils';
 
 //TODO: build this dynamically
-const countriesToFlags: ICountryToFlag[] = [
+const countryAndFlagArray: ICountryToFlag[] = [
   { country: Countries.ARGENTINA, flag: Flags.AR },
   { country: Countries.BAHAMAS, flag: Flags.BS },
   { country: Countries.CHINA, flag: Flags.CN },
@@ -26,7 +26,19 @@ export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
   useEffect(() => {
     setCountryMode(Countries.USA);
     setFlagMode(Flags.US);
-  }, []);
+  }, [countryMode === 'light']);
+
+  const updateCountryAndFlagTheme = () => {
+    const countryAndFlagIndex = countryAndFlagArray.findIndex(
+      (country) => country.country === countryMode
+    );
+    const nextCountryAndFlagItem =
+      countryAndFlagArray[
+        (countryAndFlagIndex + 1) % countryAndFlagArray.length
+      ];
+    setCountryMode(nextCountryAndFlagItem.country);
+    setFlagMode(nextCountryAndFlagItem.flag);
+  };
 
   return (
     <Box
@@ -40,30 +52,25 @@ export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
           width: 6,
           height: 3,
           color: 'primary',
-          bg: 'background',
+          bg: 'muted',
+          p: 0,
         }}
         onClick={(e) => {
-          const countryToFlagIndex = countriesToFlags.findIndex(
-            (country) => country.country === countryMode
-          );
-          const nextCountryToFlag =
-            countriesToFlags[
-              (countryToFlagIndex + 1) % countriesToFlags.length
-            ];
-          setCountryMode(nextCountryToFlag.country);
-          setFlagMode(nextCountryToFlag.flag);
+          updateCountryAndFlagTheme();
         }}
       >
         <Box
           sx={{
-            display: 'flexbox',
-            alignContent: 'flex-start',
+            display: 'flex',
+            justifyContent: 'center',
+            alignContent: 'space-between',
+            alignItems: 'center',
           }}
         >
           <Paragraph
             sx={{
               fontSize: 1,
-              display: 'inline',
+              pr: 2,
             }}
           >
             {countryMode.charAt(0).toUpperCase() +
@@ -73,7 +80,7 @@ export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
                 .join(' ')}
           </Paragraph>
           <Image
-            sx={{ display: 'inline', width: '50%', height: '50%' }}
+            sx={{ width: '30%', height: '30%' }}
             src={`https://crwflags.com/fotw/images/${flagMode.charAt(
               0
             )}/${flagMode}.gif`}
