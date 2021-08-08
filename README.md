@@ -45,7 +45,7 @@ Named after [Zaire](https://en.wikipedia.org/wiki/Zaire). I learned about this d
 
 # Planned Releases (List is always WIP).
 
-## v2.0.0 Isle of Portland (Jan 2022)
+## v2.0.0 Isle of Portland (Dec 2021)
 
 <p align='center'>
 <img src='https://www.flaginstitute.org/wp/wp-content/uploads/flags/UNKG7513.png' alt="Isle of Portland's Flag" width='50%'/>
@@ -82,9 +82,9 @@ Named after [Dr. Edgar F. Codd](https://en.wikipedia.org/wiki/Edgar_F._Codd)'s p
 
 - Create API for various calls.
 - Guess the flag v2.0.0
-  - Display a flag
-  - Give a multiple choice option
-  - Give feedback i.e. "correct" or "incorrect"
+  1. Display a flag
+  2. Give a multiple choice option
+  3. Give feedback i.e. "correct" or "incorrect"
 
 ## v2.1.4 Republic of Rose Island (Feb 2022)
 
