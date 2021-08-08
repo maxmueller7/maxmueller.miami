@@ -37,15 +37,17 @@ Named after [Zaire](https://en.wikipedia.org/wiki/Zaire). I learned about this d
   - 🇦🇷, 🇧🇸, 🇨🇳, 🇮🇳, 🇮🇱, 🇮🇹, 🇯🇲, 🇯🇵, 🇶🇦, 🇿🇦, 🇺🇦, 🇺🇸 and Zaire (no emoji 😭).
 - Use i18n to translate 'Hello' into multiple languages.
 - Use <span>countryflags.io</span> for flag icons.
-- Small chart with stats about flags using Ag-grid.
 - My picture, resume, and LinkedIn profile.
+- Guess the flag name v1.0.0
+  1. Display a flag
+  2. Ask for input in text box.
+  3. Check if correct or not (string match).
 
 # Planned Releases (List is always WIP).
 
 ## v2.0.0 Isle of Portland (Jan 2022)
 
 <p align='center'>
-
 <img src='https://www.flaginstitute.org/wp/wp-content/uploads/flags/UNKG7513.png' alt="Isle of Portland's Flag" width='50%'/>
 </p>
 
@@ -79,4 +81,20 @@ Named after [Dr. Edgar F. Codd](https://en.wikipedia.org/wiki/Edgar_F._Codd)'s p
   - INSCRIPTION (boolean)
 
 - Create API for various calls.
+- Guess the flag v2.0.0
+  - Display a flag
+  - Give a multiple choice option
+  - Give feedback i.e. "correct" or "incorrect"
+
+## v2.1.4 Republic of Rose Island (Feb 2022)
+
+<p align='center'>
+<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Rose_Island_Flag.svg/2560px-Rose_Island_Flag.svg.png' alt="Republic of Rose Island's Flag" width='50%'/>
+</p>
+
+Don't question my versioning - it just fits. This is a small update named after Giorgio Rosa's micronation, [The Republic of Rose Island](https://en.wikipedia.org/wiki/Republic_of_Rose_Island).
+
+- Small chart with stats about flags using Ag-grid.
 - Integrate either Ag-charts or Chartsjs to show data.
+- Guess the flag v2.1.4
+  - Add scoring (Correct / Incorrect / Out of x of flags)
