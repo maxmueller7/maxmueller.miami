@@ -14,9 +14,9 @@ const countriesToFlags: ICountryToFlag[] = [
   { country: Countries.JAPAN, flag: Flags.JP },
   { country: Countries.QATAR, flag: Flags.QA },
   { country: Countries.SOUTHAFRICA, flag: Flags.ZA },
-  { country: Countries.UGANDA, flag: Flags.UG },
   { country: Countries.UKRAINE, flag: Flags.UA },
   { country: Countries.USA, flag: Flags.US },
+  { country: Countries.ZAIRE, flag: Flags.ZR },
 ];
 
 export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
