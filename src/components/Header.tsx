@@ -35,7 +35,7 @@ export const Header: FC<{}> = (): JSX.Element => {
             fontWeight: 'heading',
           }}
         >
-          Hello.
+          Hello, I'm Max.
         </Paragraph>
       </Box>
     </Box>

@@ -22,7 +22,7 @@ export const theme: Theme = {
   colors: {
     text: '#3c3b6e',
     background: '#fff',
-    primary: '#3c3b6e',
+    primary: '#B22234',
     secondary: '#23435',
     muted: '#f6f6f6',
     modes: {

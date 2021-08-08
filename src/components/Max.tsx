@@ -14,11 +14,7 @@ export const Max: FC<{}> = (): JSX.Element => {
         height: '100%',
       }}
     >
-      <Paragraph>
-        My name is Max, and
-        <br />
-        I'm a Software Engineer.
-      </Paragraph>
+      <Paragraph>I'm a Full-Stack Dev.</Paragraph>
       <Link
         sx={{ color: 'primary', bg: 'background', textDecoration: 'none' }}
         href='/'
