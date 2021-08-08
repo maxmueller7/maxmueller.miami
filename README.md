@@ -22,8 +22,9 @@ I bootstrapped this TypeScript app with [Create React App](https://create-react-
 
 I'll be versioning my site based on flags.
 
-### v1.0.0 Zaire:
+## v1.0.0 Zaire:
 
+![Zaire's Flag](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Flag_of_Zaire_%281971%E2%80%931997%29.svg/1920px-Flag_of_Zaire_%281971%E2%80%931997%29.svg.png "Zaire's Flag")
 The first version will be named after the flag that got me started into Vexillology.
 
 - Init dev and deployment of site.
@@ -36,7 +37,9 @@ The first version will be named after the flag that got me started into Vexillol
 
 # Planned Releases (List is always WIP).
 
-### v2.0.0 Isle of Portland (Jan 2022)
+## v2.0.0 Isle of Portland (Jan 2022)
+
+![Isle of Portland's Flag](https://www.flaginstitute.org/wp/wp-content/uploads/flags/UNKG7513.png "Isle of Portland's Flag")
 
 Named after Edgar F. Codd's place of birth because this release deals with a lot of database stuff.
 
