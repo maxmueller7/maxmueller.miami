@@ -16,7 +16,9 @@ You're looking at my site because you're a flag lover, and _possibly_ a technica
 
 # About my website.
 
-I bootstrapped this TypeScript app with [Create React App](https://create-react-app.dev/). I'm using [Theme-UI](https://theme-ui.com/) for theming, and [this site](https://www.countryflags.io/) for the flag icons.
+- I bootstrapped this TypeScript app with [Create React App](https://create-react-app.dev/).
+- I'm using [Theme-UI](https://theme-ui.com/) for theming.
+- I'm getting the flag icons from [this site](https://www.countryflags.io/) for now. I plan to build my own API in the future.
 
 # Changelog.
 
@@ -27,7 +29,8 @@ I'll be versioning my site based on flags.
 <p align='center'>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Flag_of_Zaire_%281971%E2%80%931997%29.svg/1920px-Flag_of_Zaire_%281971%E2%80%931997%29.svg.png" alt="Zaire's Flag" width='50%'/>
 </p>
-The first version will be named after the flag that got me started into Vexillology.
+
+Named after [Zaire](https://en.wikipedia.org/wiki/Zaire). I learned about this defunct country's flag in an old encyclopedia in my grandfather's home. The page looked something like [this](https://live.staticflickr.com/4001/4290551550_474fbb9086_b.jpg). It's only fitting, since this flag is what got me interested in Vexillology.
 
 - Init dev and deployment of site.
 - Themed with Theme-UI, themes are:
