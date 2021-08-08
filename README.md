@@ -18,7 +18,7 @@ You're looking at my site because you're a flag lover, and _possibly_ a technica
 
 - I bootstrapped this TypeScript app with [Create React App](https://create-react-app.dev/).
 - I'm using [Theme-UI](https://theme-ui.com/) for theming.
-- I'm getting the flag icons from [this site](https://www.countryflags.io/) for now. I plan to build my own API in the future.
+- I'm getting the flag icons from [countryflags.io](https://www.countryflags.io/) for now. I plan to build my own API in the near future.
 
 # Changelog.
 
@@ -34,7 +34,7 @@ Named after [Zaire](https://en.wikipedia.org/wiki/Zaire). I learned about this d
 
 - Init dev and deployment of site.
 - Themed with Theme-UI, themes are:
-  - 🇦🇷, 🇧🇸, 🇨🇳, 🇮🇳, 🇮🇱, 🇮🇹, 🇯🇲, 🇯🇵, 🇶🇦, 🇿🇦, 🇺🇬, 🇺🇦, 🇺🇸.
+  - 🇦🇷, 🇧🇸, 🇨🇳, 🇮🇳, 🇮🇱, 🇮🇹, 🇯🇲, 🇯🇵, 🇶🇦, 🇿🇦, 🇺🇦, 🇺🇸 and Zaire (no emoji 😭).
 - Use i18n to translate 'Hello' into multiple languages.
 - Use <span>countryflags.io</span> for flag icons.
 - Small chart with stats about flags using Ag-grid.

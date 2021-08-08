@@ -9,25 +9,25 @@ export enum Countries {
   JAPAN = 'japan',
   QATAR = 'qatar',
   SOUTHAFRICA = 'southAfrica',
-  UGANDA = 'uganda',
   UKRAINE = 'ukraine',
   USA = 'unitedStates',
+  ZAIRE = 'zaire',
 }
 
 export enum Flags {
   AR = 'AR',
   BS = 'BS',
   CN = 'CN',
-  IN = 'IN',
   IL = 'IL',
+  IN = 'IN',
   IT = 'IT',
   JM = 'JM',
   JP = 'JP',
   QA = 'QA',
-  ZA = 'ZA',
-  UG = 'UG',
   UA = 'UA',
   US = 'US',
+  ZA = 'ZA',
+  ZR = 'ZR',
 }
 
 export interface ICountryToFlag {
