@@ -27,11 +27,11 @@ export const theme: Theme = {
     muted: '#f6f6f6',
     modes: {
       argentina: {
-        text: '#f6b40e',
+        text: '#80AAD7',
         background: '#fff',
-        primary: '#f6b40e',
-        secondary: '#74acdf',
-        muted: '#000',
+        primary: '#F4C05F',
+        secondary: '#F4C05F',
+        muted: '#edf2f7',
       },
       bahamas: {
         text: '#FFC72C',

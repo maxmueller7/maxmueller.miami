@@ -14,9 +14,15 @@ export const Max: FC<{}> = (): JSX.Element => {
         height: '100%',
       }}
     >
-      <Paragraph>I'm a Full-Stack Dev.</Paragraph>
+      <Paragraph
+        sx={{
+          color: 'text',
+        }}
+      >
+        I'm a Full-Stack Dev.
+      </Paragraph>
       <Link
-        sx={{ color: 'primary', bg: 'background', textDecoration: 'none' }}
+        sx={{ color: 'secondary', bg: 'background', textDecoration: 'none' }}
         href='/'
       >
         Link example

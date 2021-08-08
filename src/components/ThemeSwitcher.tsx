@@ -49,9 +49,15 @@ export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
     >
       <Button
         sx={{
+          backgroundColor: 'muted',
+          transition: 'all .05s',
           color: 'primary',
-          bg: 'muted',
           p: 1,
+          boxShadow: '3px 3px',
+          '&:active': {
+            transform: 'translateX(2px) translateY(2px)',
+            boxShadow: '0px 0px',
+          },
         }}
         onClick={(e) => {
           updateCountryAndFlagTheme();
@@ -59,10 +65,10 @@ export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
       >
         <Box
           sx={{
-            display: 'flex',
-            justifyContent: 'flex-end',
             alignContent: 'space-around',
             alignItems: 'center',
+            display: 'flex',
+            justifyContent: 'flex-end',
           }}
         >
           <Paragraph
