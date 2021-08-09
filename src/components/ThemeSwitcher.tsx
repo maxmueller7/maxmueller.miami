@@ -26,9 +26,9 @@ export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
   useEffect(() => {
     setCountryMode(Countries.USA);
     setFlagMode(Flags.US);
-  }, [countryMode === 'light']);
+  }, [setCountryMode]);
 
-  const updateCountryAndFlagTheme = () => {
+  const updateCountryAndFlagTheme = (): void => {
     const countryAndFlagIndex = countryAndFlagArray.findIndex(
       (country) => country.country === countryMode
     );
@@ -50,14 +50,9 @@ export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
       <Button
         sx={{
           backgroundColor: 'muted',
-          transition: 'all .05s',
+          borderRadius: 0,
           color: 'primary',
           p: 1,
-          boxShadow: '3px 3px',
-          '&:active': {
-            transform: 'translateX(2px) translateY(2px)',
-            boxShadow: '0px 0px',
-          },
         }}
         onClick={(e) => {
           updateCountryAndFlagTheme();

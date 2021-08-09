@@ -6,7 +6,6 @@ export const Max: FC<{}> = (): JSX.Element => {
     <Box
       sx={{
         bg: 'background',
-        borderRadius: '2px',
         fontSize: 3,
         margin: 'auto',
         px: 2,
@@ -19,14 +18,17 @@ export const Max: FC<{}> = (): JSX.Element => {
           color: 'text',
         }}
       >
-        I'm a Full-Stack Dev.
+        I'm a Full-Stack Dev. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <Link
+          sx={{ color: 'secondary', bg: 'background', textDecoration: 'none' }}
+          href='/'
+        >
+          {' '}
+          Lobortis elementum nibh tellus molestie{' '}
+        </Link>
+        nunc non blandit massa enim. Natoque penatibus et magnis dis parturient.
       </Paragraph>
-      <Link
-        sx={{ color: 'secondary', bg: 'background', textDecoration: 'none' }}
-        href='/'
-      >
-        Link example
-      </Link>
     </Box>
   );
 };
