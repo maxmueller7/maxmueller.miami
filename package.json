@@ -1,5 +1,5 @@
 {
-  "name": "Max Vexi Site",
+  "name": "max-mueller-site",
   "author": "Max Mueller",
   "version": "0.1.0",
   "private": true,
@@ -28,7 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy:main": "git add . && git commit -m 'deploying main to heroku' && sleep 10 && git push git push heroku main"
   },
   "eslintConfig": {
     "extends": [
