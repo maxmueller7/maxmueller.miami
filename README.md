@@ -24,7 +24,7 @@ You're looking at my site because you're a flag lover, and _possibly_ a technica
 
 I'll be versioning my site based on flags.
 
-## v1.0.0 Zaire:
+## v1.0.0 Zaire (September 2021):
 
 <p align='center'>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Flag_of_Zaire_%281971%E2%80%931997%29.svg/1920px-Flag_of_Zaire_%281971%E2%80%931997%29.svg.png" alt="Zaire's Flag" width='50%'/>
@@ -98,3 +98,13 @@ Don't question my versioning - it just fits. This is a small update named after 
 - Integrate either Ag-charts or Chartsjs to show data.
 - Guess the flag v2.1.4
   - Add scoring (Correct / Incorrect / Out of x of flags)
+
+## v2.2.0 City of Chicago (April 2022)
+
+<p align='center'>
+<img src='https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Chicago%2C_Illinois.svg' alt="City of Chicago's Flag" width='50%'/>
+</p>
+
+In commemoration of the first ever cell phone call placed April 3rd, 1973, I will be making the website responsive to different media sizes. Fun fact, that phone call was placed by Motorola's Martin Cooper (from Chicago, IL), to his engineer Joel Engel at rival AT&T: "Joel, this is Marty. I'm calling you from a cell phone, a real handheld portable cell phone."
+
+- Media queries for all components.
