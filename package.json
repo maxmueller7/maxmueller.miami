@@ -17,7 +17,9 @@
     "@types/node": "^16.4.10",
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
+    "i": "^0.3.6",
     "node-sass": "^4.14.1",
+    "npm": "^7.20.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
@@ -48,8 +50,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "theme-ui": "^0.10.0"
   }
 }
