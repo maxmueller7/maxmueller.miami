@@ -1,8 +1,10 @@
-import React, { FC } from 'react';
+import React, { FC, useContext } from 'react';
 import { Box, Paragraph } from 'theme-ui';
-import { ThemeSwitcher } from './ThemeSwitcher';
+import { ThemeSwitcher } from '../ThemeSwitcher/ThemeSwitcher';
+import { LanguageContext } from 'hooks/Contexts';
 
 export const Header: FC<{}> = (): JSX.Element => {
+  const helloMsg = useContext(LanguageContext);
   return (
     <Box
       sx={{
@@ -23,7 +25,7 @@ export const Header: FC<{}> = (): JSX.Element => {
           py: 3,
         }}
       >
-        Hello, I'm Max.
+        {helloMsg} I'm Max.
       </Paragraph>
       <ThemeSwitcher />
     </Box>

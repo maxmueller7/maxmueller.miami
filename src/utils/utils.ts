@@ -10,8 +10,8 @@ export enum Countries {
   QATAR = 'qatar',
   SOUTHAFRICA = 'southAfrica',
   UKRAINE = 'ukraine',
-  USA = 'unitedStates',
-  ZAIRE = 'zaire',
+  US = 'unitedStates',
+  CDZR = 'zaire',
 }
 
 export enum Flags {
@@ -30,13 +30,24 @@ export enum Flags {
   CDZR = 'CD-ZR',
 }
 
-export enum HelloPolyglot {
+export enum Language {
   AR = 'Hola',
-  JP = 'こんにちは',
+  BS = 'Hi',
+  CN = '你好',
+  IL = 'שלום',
+  IN = 'नमस्ते',
+  IT = 'Ciao',
+  JM = 'Hello',
+  JP = 'やあ',
+  QA = 'أهلا',
+  UA = 'Привіт',
+  US = 'Hello',
+  ZA = 'Howzit',
   CDZR = 'Bonjour',
 }
 
 export interface ICountryToFlag {
   country: string;
   flag: string;
+  language: string;
 }

@@ -1,22 +1,22 @@
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC, useState, useEffect, useReducer } from 'react';
 import { Box, Button, useColorMode, Paragraph, Image } from 'theme-ui';
-import { Countries, Flags, ICountryToFlag } from 'utils';
+import { Countries, Flags, ICountryToFlag, Language } from 'utils/utils';
 
 //TODO: build this dynamically
 const countryAndFlagArray: ICountryToFlag[] = [
-  { country: Countries.ARGENTINA, flag: Flags.AR },
-  { country: Countries.BAHAMAS, flag: Flags.BS },
-  { country: Countries.CHINA, flag: Flags.CN },
-  { country: Countries.INDIA, flag: Flags.IN },
-  { country: Countries.ISRAEL, flag: Flags.IL },
-  { country: Countries.ITALY, flag: Flags.IT },
-  { country: Countries.JAMAICA, flag: Flags.JM },
-  { country: Countries.JAPAN, flag: Flags.JP },
-  { country: Countries.QATAR, flag: Flags.QA },
-  { country: Countries.SOUTHAFRICA, flag: Flags.ZA },
-  { country: Countries.UKRAINE, flag: Flags.UA },
-  { country: Countries.USA, flag: Flags.US },
-  { country: Countries.ZAIRE, flag: Flags.CDZR },
+  { country: Countries.ARGENTINA, flag: Flags.AR, language: Language.AR },
+  { country: Countries.BAHAMAS, flag: Flags.BS, language: Language.BS },
+  { country: Countries.CHINA, flag: Flags.CN, language: Language.CN },
+  { country: Countries.INDIA, flag: Flags.IN, language: Language.IN },
+  { country: Countries.ISRAEL, flag: Flags.IL, language: Language.IL },
+  { country: Countries.ITALY, flag: Flags.IT, language: Language.IT },
+  { country: Countries.JAMAICA, flag: Flags.JM, language: Language.JM },
+  { country: Countries.JAPAN, flag: Flags.JP, language: Language.JP },
+  { country: Countries.QATAR, flag: Flags.QA, language: Language.QA },
+  { country: Countries.SOUTHAFRICA, flag: Flags.ZA, language: Language.ZA },
+  { country: Countries.UKRAINE, flag: Flags.UA, language: Language.UA },
+  { country: Countries.US, flag: Flags.US, language: Language.US },
+  { country: Countries.CDZR, flag: Flags.CDZR, language: Language.CDZR },
 ];
 
 export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
@@ -24,7 +24,7 @@ export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
   const [flagMode, setFlagMode] = useState('US');
 
   useEffect(() => {
-    setCountryMode(Countries.USA);
+    setCountryMode(Countries.US);
     setFlagMode(Flags.US);
   }, [setCountryMode]);
 
