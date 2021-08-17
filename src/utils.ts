@@ -30,6 +30,12 @@ export enum Flags {
   CDZR = 'CD-ZR',
 }
 
+export enum HelloPolyglot {
+  AR = 'Hola',
+  JP = 'こんにちは',
+  CDZR = 'Bonjour',
+}
+
 export interface ICountryToFlag {
   country: string;
   flag: string;
