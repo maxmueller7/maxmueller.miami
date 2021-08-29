@@ -171,6 +171,7 @@ export const theme: Theme = {
     },
     a: {
       color: 'primary',
+      textDecoration: 'none',
       '&:hover': {
         color: 'muted',
       },

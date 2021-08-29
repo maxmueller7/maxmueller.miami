@@ -40,3 +40,10 @@ export interface ICountryToFlag {
   country: string;
   flag: string;
 }
+
+export enum MySitesLinks {
+  CRWFLAGS = 'https://crwflags.com',
+  GITHUB = 'https://github.com/maxmueller7',
+  LINKEDIN = 'https://www.linkedin.com/in/maxmueller7',
+  NAVA = 'https://www.nava.org',
+}

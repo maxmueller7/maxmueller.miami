@@ -1,6 +1,6 @@
 import React, { FC, useState, useEffect } from 'react';
 import { Box, Button, useColorMode, Paragraph, Image } from 'theme-ui';
-import { Countries, Flags, ICountryToFlag } from 'utils';
+import { Countries, Flags, ICountryToFlag, MySitesLinks } from 'utils';
 
 //TODO: build this dynamically
 const countryAndFlagArray: ICountryToFlag[] = [
@@ -80,7 +80,7 @@ export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
           </Paragraph>
           <Image
             sx={{ maxHeight: 2 }}
-            src={`https://crwflags.com/fotw/images/${flagMode.charAt(
+            src={`${MySitesLinks.CRWFLAGS}/fotw/images/${flagMode.charAt(
               0
             )}/${flagMode}.gif`}
           />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from 'components/Header';
-import { Max } from 'components/Max';
+import { WebPage } from 'pages/WebPage';
 import { ThemeProvider, Box } from 'theme-ui';
 import { theme } from './theme';
 
@@ -16,7 +16,7 @@ const App = (): JSX.Element => {
           }}
         >
           <Header />
-          <Max />
+          <WebPage />
         </Box>
       </ThemeProvider>
     </div>
