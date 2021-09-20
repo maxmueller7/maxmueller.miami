@@ -2,13 +2,12 @@
 
 Hi, I'm Max. I hope you enjoyed my site. Let's get a few things out of the way first:
 
-1.  This is my site's readme, I will write silly things like this list. 😵‍💫
-2.  I'm a Full-Stack Software Engineer and love building software.
-3.  I have a cat. He occasionally writes code by jumping on the keyboard, but his PR's always get declined. 😥
-4.  You can contact me at [hello@maxmueller.miami](mailto:hello@maxmueller.miami).
-5.  Flags are cool, so if Vexillology peaked your interest, look into joining [NAVA](https://www.nava.org).
-6.  Fun fact: I hold 3 citizenships: 🇦🇷🇺🇸🇵🇱
-7.  My favorite flag is [Zaire's Flag](https://www.crwflags.com/fotw/images/c/cd-zaire.gif)
+1.  I'm a Full-Stack Software Engineer and love building software.
+2.  I have a cat. He occasionally writes code by jumping on the keyboard, but his PR's always get declined. 😥
+3.  You can contact me at [hello@maxmueller.miami](mailto:hello@maxmueller.miami).
+4.  Flags are cool, so if Vexillology peaked your interest, look into joining [NAVA](https://www.nava.org).
+5.  Fun fact: I hold 3 citizenships: 🇦🇷🇺🇸🇵🇱
+6.  Fun fact #2: My favorite flag is [Zaire's Flag](https://www.crwflags.com/fotw/images/c/cd-zaire.gif)
 
 # About you.
 
@@ -24,7 +23,7 @@ You're looking at my site because you're a flag lover, and _possibly_ a technica
 
 I'll be versioning my site based on flags.
 
-## v1.0.0 Zaire (September 2021):
+## v1.0.0 Zaire (October 2021):
 
 <p align='center'>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Flag_of_Zaire_%281971%E2%80%931997%29.svg/1920px-Flag_of_Zaire_%281971%E2%80%931997%29.svg.png" alt="Zaire's Flag" width='50%'/>
