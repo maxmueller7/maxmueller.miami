@@ -1,57 +1,51 @@
 import React, { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link, Box } from 'theme-ui';
+import { Link, Box, Flex, Image, Paragraph } from 'theme-ui';
 import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { MySitesLinks } from 'utils';
+import { IMySites, mySites, MySitesLinks } from 'utils';
+import { faAt, faHashtag } from '@fortawesome/free-solid-svg-icons';
 
-export const ProfileLinks: FC<{}> = (): JSX.Element => {
+interface IProfileLinksProps {}
+
+export const ProfileLinks: FC<IProfileLinksProps> = ({}): JSX.Element => {
   return (
-    <Box
+    <Flex
       sx={{
-        display: 'flex',
-        justifyContent: 'space-evenly',
-        width: '100%',
-        px: 5,
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        width: '10%',
       }}
     >
-      <Link
-        sx={{
-          color: 'secondary',
-          bg: 'background',
-          textDecoration: 'none',
-        }}
-        href={MySitesLinks.LINKEDIN}
-        target='_blank'
-        title='Link to my LinkedIn Profile'
-      >
-        <FontAwesomeIcon icon={faLinkedin} />
-      </Link>
-      <Link
-        sx={{
-          color: 'secondary',
-          bg: 'background',
-          textDecoration: 'none',
-        }}
-        href={MySitesLinks.GITHUB}
-        target='_blank'
-        title='Link to my Github Profile'
-      >
-        <FontAwesomeIcon icon={faGithub} />
-      </Link>
-      <Link
-        sx={{
-          color: 'secondary',
-          bg: 'background',
-          textDecoration: 'none',
-        }}
-        href='max-mueller-software-engineer.pdf'
-        download
-        target='_blank'
-        title='Download My Resume'
-      >
-        <FontAwesomeIcon icon={faFilePdf} />
-      </Link>
-    </Box>
+      <aside>
+        <ul style={{ padding: 0, margin: 0, border: 0 }}>
+          <Flex
+            sx={{
+              alignItems: 'center',
+              display: 'flex',
+              flexFlow: 'column',
+              px: 3,
+            }}
+          >
+            {mySites.map((site: IMySites) => (
+              <Link
+                sx={{
+                  bg: 'background',
+                  color: 'secondary',
+                  textDecoration: 'none',
+                }}
+                download={site.download}
+                href={site.href}
+                id={`site-link-id-{${site.href}}`}
+                target='_blank'
+                title={site.title}
+              >
+                <FontAwesomeIcon icon={site.icon} />
+              </Link>
+            ))}
+          </Flex>
+        </ul>
+      </aside>
+    </Flex>
   );
 };

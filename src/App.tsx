@@ -1,25 +1,24 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Header } from 'components/Header';
-import { WebPage } from 'pages/WebPage';
-import { ThemeProvider, Box } from 'theme-ui';
+import { Main } from 'pages/Main';
+import { ThemeProvider, Flex } from 'theme-ui';
 import { theme } from './theme';
 
-const App = (): JSX.Element => {
+interface IAppProps {}
+
+const App: FC<IAppProps> = (): JSX.Element => {
   return (
-    <div className='App'>
-      <ThemeProvider theme={theme}>
-        <Box
-          sx={{
-            bg: 'background',
-            height: '100vh',
-            textAlign: 'center',
-          }}
-        >
-          <Header />
-          <WebPage />
-        </Box>
-      </ThemeProvider>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Flex
+        sx={{
+          flex: '1 1 auto',
+          flexFlow: 'column',
+        }}
+      >
+        <Header />
+        <Main />
+      </Flex>
+    </ThemeProvider>
   );
 };
 

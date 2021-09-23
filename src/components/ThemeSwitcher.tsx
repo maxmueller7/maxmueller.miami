@@ -1,5 +1,5 @@
 import React, { FC, useState, useEffect } from 'react';
-import { Box, Button, useColorMode, Paragraph, Image } from 'theme-ui';
+import { Button, useColorMode, Image, Flex } from 'theme-ui';
 import { Countries, Flags, ICountryToFlag, MySitesLinks } from 'utils';
 
 //TODO: build this dynamically
@@ -19,7 +19,9 @@ const countryAndFlagArray: ICountryToFlag[] = [
   { country: Countries.ZAIRE, flag: Flags.CDZR },
 ];
 
-export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
+interface IThemeSwitcherProps {}
+
+export const ThemeSwitcher: FC<IThemeSwitcherProps> = ({}): JSX.Element => {
   const [countryMode, setCountryMode] = useColorMode();
   const [flagMode, setFlagMode] = useState('US');
 
@@ -41,51 +43,30 @@ export const ThemeSwitcher: FC<{}> = (): JSX.Element => {
   };
 
   return (
-    <Box
-      sx={{
-        fontFamily: 'heading',
-        fontSize: 2,
+    <Button
+      variant={'styles.themeSwitcherButton'}
+      onClick={(e) => {
+        updateCountryAndFlagTheme();
       }}
     >
-      <Button
+      <Flex
         sx={{
-          backgroundColor: 'muted',
-          borderRadius: 0,
-          color: 'primary',
-          p: 1,
-        }}
-        onClick={(e) => {
-          updateCountryAndFlagTheme();
+          alignContent: 'space-around',
+          alignItems: 'center',
+          justifyContent: 'space-between',
         }}
       >
-        <Box
-          sx={{
-            alignContent: 'space-around',
-            alignItems: 'center',
-            display: 'flex',
-            justifyContent: 'flex-end',
-          }}
-        >
-          <Paragraph
-            sx={{
-              fontSize: 1,
-              pr: 2,
-            }}
-          >
-            {countryMode.charAt(0).toUpperCase() +
-              countryMode
-                .slice(1)
-                .split(/(?=[A-Z])/)
-                .join(' ')}
-          </Paragraph>
-          <Image
-            sx={{ maxHeight: 2 }}
-            src={`${MySitesLinks.CRWFLAGS}/fotw/images/${flagMode.charAt(
-              0
-            )}/${flagMode}.gif`}
-          />
-        </Box>
-      </Button>
-    </Box>
+        {countryMode.charAt(0).toUpperCase() +
+          countryMode
+            .slice(1)
+            .split(/(?=[A-Z])/)
+            .join(' ')}
+        <Image
+          src={`${MySitesLinks.CRWFLAGS}/fotw/images/${flagMode.charAt(
+            0
+          )}/${flagMode}.gif`}
+        />
+      </Flex>
+    </Button>
   );
 };
