@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Card, Flex, Image, Link, Paragraph, Text } from 'theme-ui';
+import { Card, Image, Link, Paragraph } from 'theme-ui';
 import { MySitesLinks } from 'utils';
 
 interface IAboutMeProps {}

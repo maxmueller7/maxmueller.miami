@@ -1,10 +1,7 @@
 import React, { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link, Box, Flex, Image, Paragraph } from 'theme-ui';
-import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { IMySites, mySites, MySitesLinks } from 'utils';
-import { faAt, faHashtag } from '@fortawesome/free-solid-svg-icons';
+import { Link, Flex } from 'theme-ui';
+import { IMySites, mySites } from 'utils';
 
 interface IProfileLinksProps {}
 

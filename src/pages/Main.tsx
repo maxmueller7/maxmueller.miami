@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Box, Flex } from 'theme-ui';
+import { Flex } from 'theme-ui';
 import { AboutMe } from 'components/AboutMe';
 import { ProfileLinks } from 'components/ProfileLinks';
 
