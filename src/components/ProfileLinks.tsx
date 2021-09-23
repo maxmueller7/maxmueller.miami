@@ -5,23 +5,23 @@ import { IMySites, mySites } from 'utils';
 
 interface IProfileLinksProps {}
 
-export const ProfileLinks: FC<IProfileLinksProps> = ({}): JSX.Element => {
+export const ProfileLinks: FC<IProfileLinksProps> = (): JSX.Element => {
   return (
     <Flex
       sx={{
-        justifyContent: 'flex-start',
+        justifyContent: ['center', 'flex-start'],
         alignItems: 'center',
-        width: '10%',
+        width: ['100vw', 4],
       }}
     >
-      <aside>
+      <aside style={{ width: '80%' }}>
         <ul style={{ padding: 0, margin: 0, border: 0 }}>
           <Flex
             sx={{
-              alignItems: 'center',
+              alignItems: 'top',
               display: 'flex',
-              flexFlow: 'column',
-              px: 3,
+              flexFlow: ['row', 'column'],
+              justifyContent: ['space-evenly', ''],
             }}
           >
             {mySites.map((site: IMySites) => (
@@ -33,11 +33,11 @@ export const ProfileLinks: FC<IProfileLinksProps> = ({}): JSX.Element => {
                 }}
                 download={site.download}
                 href={site.href}
-                id={`site-link-id-{${site.href}}`}
+                key={`site-link-id-{${site.href}}`}
                 target='_blank'
                 title={site.title}
               >
-                <FontAwesomeIcon icon={site.icon} />
+                <FontAwesomeIcon icon={site.icon} size={'xs'} />
               </Link>
             ))}
           </Flex>

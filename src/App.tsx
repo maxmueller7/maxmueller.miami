@@ -3,6 +3,7 @@ import { Header } from 'components/Header';
 import { Main } from 'pages/Main';
 import { ThemeProvider, Flex } from 'theme-ui';
 import { theme } from './theme';
+import VexiGame from 'pages/VexiGame';
 
 interface IAppProps {}
 
@@ -16,7 +17,11 @@ const App: FC<IAppProps> = (): JSX.Element => {
         }}
       >
         <Header />
-        <Main />
+        <br />
+        <main>
+          <Main />
+          <VexiGame />
+        </main>
       </Flex>
     </ThemeProvider>
   );

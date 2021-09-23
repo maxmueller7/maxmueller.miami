@@ -4,7 +4,7 @@ import { ThemeSwitcher } from './ThemeSwitcher';
 
 interface IHeaderProps {}
 
-export const Header: FC<IHeaderProps> = ({}): JSX.Element => {
+export const Header: FC<IHeaderProps> = (): JSX.Element => {
   return (
     <header>
       <Box variant={'styles.header'}>

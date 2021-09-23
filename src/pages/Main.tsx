@@ -5,13 +5,11 @@ import { ProfileLinks } from 'components/ProfileLinks';
 
 interface IMainProps {}
 
-export const Main: FC<IMainProps> = ({}): JSX.Element => {
+export const Main: FC<IMainProps> = (): JSX.Element => {
   return (
-    <main>
-      <Flex variant={'styles.main'}>
-        <ProfileLinks />
-        <AboutMe />
-      </Flex>
-    </main>
+    <Flex variant={'styles.main'}>
+      <ProfileLinks />
+      <AboutMe />
+    </Flex>
   );
 };
