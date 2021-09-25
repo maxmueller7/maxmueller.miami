@@ -21,7 +21,7 @@ const countryAndFlagArray: ICountryToFlag[] = [
 
 interface IThemeSwitcherProps {}
 
-export const ThemeSwitcher: FC<IThemeSwitcherProps> = ({}): JSX.Element => {
+export const ThemeSwitcher: FC<IThemeSwitcherProps> = (): JSX.Element => {
   const [countryMode, setCountryMode] = useColorMode();
   const [flagMode, setFlagMode] = useState('US');
 
