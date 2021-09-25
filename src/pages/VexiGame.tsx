@@ -9,9 +9,8 @@ const VexiGame = () => {
         <Paragraph
           variant={'styles.pLight'}
           sx={{
-            width: '80%',
             textAlign: 'left',
-            py: 4,
+            mb: 3,
           }}
         >
           I am a creative person with an eye for clean, modern aesthetics, and
