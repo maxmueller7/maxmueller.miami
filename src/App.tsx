@@ -3,10 +3,11 @@ import { Header } from 'components/Header';
 import { Main } from 'pages/Main';
 import { ThemeProvider, Flex } from 'theme-ui';
 import { theme } from './theme';
+import './App.scss';
 
-interface IAppProps {}
+interface AppProps {}
 
-const App: FC<IAppProps> = (): JSX.Element => {
+const App: FC<AppProps> = (): JSX.Element => {
   return (
     <ThemeProvider theme={theme}>
       <Flex

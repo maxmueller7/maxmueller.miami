@@ -41,7 +41,7 @@ export enum HelloPolyglot {
   CDZR = 'Bonjour',
 }
 
-export interface ICountryToFlag {
+export interface CountryToFlag {
   country: string;
   flag: string;
 }
@@ -56,14 +56,14 @@ export enum MySitesLinks {
   TWITTER = 'https://twitter.com/muellermax7',
 }
 
-export interface IMySites {
+export interface MySites {
   href: MySitesLinks;
   title: string;
   download?: boolean;
   icon: IconDefinition;
 }
 
-export const mySites: IMySites[] = [
+export const mySites: MySites[] = [
   {
     href: MySitesLinks.LINKEDIN,
     title: 'Link to my LinkedIn Profile',

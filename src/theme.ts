@@ -9,7 +9,7 @@ export const theme: Theme = {
     heading: '"Josefin Sans", sans-serif',
     monospace: 'Menlo, monospace',
   },
-  fontSizes: [12, 16, 24, 32, 48, 64, 96],
+  fontSizes: [12, 16, 24, 32, 48, 64, 96, 128, 256],
   fontWeights: {
     light: 200,
     body: 400,
@@ -126,14 +126,14 @@ export const theme: Theme = {
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: [2, 3, 4, 5, 6],
+      fontSize: [5, 6, 7],
     },
     h2: {
       color: 'primary',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 4,
+      fontSize: 6,
     },
     h3: {
       color: 'text',
@@ -160,6 +160,11 @@ export const theme: Theme = {
       lineHeight: 'heading',
       fontWeight: 'heading',
       fontSize: 0,
+    },
+    hr: {
+      width: '100%',
+      mt: 0,
+      border: (theme) => `3px solid ${theme.colors?.primary}`,
     },
     themeSwitcherButton: {
       color: 'primary',
@@ -212,13 +217,12 @@ export const theme: Theme = {
       borderBottomStyle: 'solid',
     },
     header: {
-      alignItems: 'flex-start',
+      alignItems: 'center',
       backgroundColor: 'white',
       color: 'primary',
-      display: 'flex',
-      justifyContent: 'space-between',
-      px: 3,
-      py: 4,
+      justifyContent: 'center',
+      height: '100%',
+      width: '100%',
     },
     main: {
       alignItems: 'center',

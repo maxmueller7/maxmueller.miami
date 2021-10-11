@@ -3,9 +3,9 @@ import { Flex } from 'theme-ui';
 import { AboutMe } from 'components/AboutMe';
 import { ProfileLinks } from 'components/ProfileLinks';
 
-interface IMainProps {}
+interface MainProps {}
 
-export const Main: FC<IMainProps> = ({}): JSX.Element => {
+export const Main: FC<MainProps> = ({}): JSX.Element => {
   return (
     <main>
       <Flex variant={'styles.main'}>

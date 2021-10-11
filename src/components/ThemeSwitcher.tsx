@@ -1,9 +1,9 @@
 import React, { FC, useState, useEffect } from 'react';
 import { Button, useColorMode, Image, Flex } from 'theme-ui';
-import { Countries, Flags, ICountryToFlag, MySitesLinks } from 'utils';
+import { Countries, Flags, CountryToFlag, MySitesLinks } from 'utils';
 
 //TODO: build this dynamically
-const countryAndFlagArray: ICountryToFlag[] = [
+const countryAndFlagArray: CountryToFlag[] = [
   { country: Countries.ARGENTINA, flag: Flags.AR },
   { country: Countries.BAHAMAS, flag: Flags.BS },
   { country: Countries.CHINA, flag: Flags.CN },
@@ -19,9 +19,9 @@ const countryAndFlagArray: ICountryToFlag[] = [
   { country: Countries.ZAIRE, flag: Flags.CDZR },
 ];
 
-interface IThemeSwitcherProps {}
+interface ThemeSwitcherProps {}
 
-export const ThemeSwitcher: FC<IThemeSwitcherProps> = ({}): JSX.Element => {
+export const ThemeSwitcher: FC<ThemeSwitcherProps> = ({}): JSX.Element => {
   const [countryMode, setCountryMode] = useColorMode();
   const [flagMode, setFlagMode] = useState('US');
 
