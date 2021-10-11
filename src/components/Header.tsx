@@ -1,13 +1,15 @@
-import React, { FC, useState } from 'react';
-import { Container, Divider, Flex, Image, Paragraph } from 'theme-ui';
-import { MySitesLinks } from 'utils';
+import React, { FC, useCallback, useState } from 'react';
+import { Container, Divider, Flex, Paragraph } from 'theme-ui';
+// import { MySitesLinks } from 'utils';
 import { ProfileLinks } from './ProfileLinks';
 
-interface HeaderProps {}
-
-export const Header: FC<HeaderProps> = ({}): JSX.Element => {
+export const Header: FC<{}> = (): JSX.Element => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
-  
+
+  const handleThemeSwitch = useCallback<() => void>(() => {
+    setHamburgerActive((hamburgerActive) => !hamburgerActive);
+  }, [setHamburgerActive]);
+
   return (
     <header>
       <Container
@@ -29,7 +31,12 @@ export const Header: FC<HeaderProps> = ({}): JSX.Element => {
         >
           <Paragraph variant={'styles.h4'}>max mueller</Paragraph>
           <ProfileLinks />
-          <button className={`hamburger hamburger--collapse ${}`} type='button'>
+          <button
+            onClick={handleThemeSwitch}
+            className={`hamburger hamburger--collapse ${
+              hamburgerActive ? 'is-active' : ''
+            }`}
+          >
             <span className='hamburger-box'>
               <span className='hamburger-inner'></span>
             </span>

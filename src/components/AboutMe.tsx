@@ -1,10 +1,8 @@
 import React, { FC } from 'react';
-import { Image, Link, Paragraph } from 'theme-ui';
+import { Link, Paragraph } from 'theme-ui';
 import { MySitesLinks } from 'utils';
 
-interface AboutMeProps {}
-
-export const AboutMe: FC<AboutMeProps> = ({}): JSX.Element => {
+export const AboutMe: FC<{}> = (): JSX.Element => {
   return (
     <>
       <Paragraph variant={'styles.p'} sx={{ width: '70%' }}>
@@ -27,26 +25,6 @@ export const AboutMe: FC<AboutMeProps> = ({}): JSX.Element => {
         </Link>{' '}
         for this site, and discover which flag is my favorite one.
       </Paragraph>
-
-      {/* <Paragraph
-          sx={{
-            px: 6,
-            py: 3,
-            fontSize: 2,
-          }}
-        >
-         
-        </Paragraph>
-        <Paragraph
-          sx={{
-            px: 6,
-            py: 3,
-            fontSize: 2,
-          }}
-        >
-          Also, you can click the top-right button to change the theme of the
-          site.
-        </Paragraph> */}
     </>
   );
 };

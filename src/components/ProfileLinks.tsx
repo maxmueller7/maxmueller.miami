@@ -3,9 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, Flex } from 'theme-ui';
 import { MySites, mySites } from 'utils';
 
-interface ProfileLinksProps {}
-
-export const ProfileLinks: FC<ProfileLinksProps> = ({}): JSX.Element => {
+export const ProfileLinks: FC<{}> = (): JSX.Element => {
   return (
     <ul style={{ padding: 0, margin: 0, border: 0 }}>
       <Flex
@@ -23,7 +21,7 @@ export const ProfileLinks: FC<ProfileLinksProps> = ({}): JSX.Element => {
             }}
             download={site.download}
             href={site.href}
-            id={`site-link-id-{${site.href}}`}
+            key={`site-link-key-{${site.href}}`}
             target='_blank'
             title={site.title}
           >
