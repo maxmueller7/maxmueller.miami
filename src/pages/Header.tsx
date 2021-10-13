@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
+import React, { FC, useCallback, useState } from 'react';
 import { Box, Container, Divider, Flex, Paragraph } from 'theme-ui';
 import { Hamburger } from '../components/Hamburger';
 // import { MySitesLinks } from 'utils';

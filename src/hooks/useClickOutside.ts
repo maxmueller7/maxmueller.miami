@@ -1,4 +1,4 @@
-import { useRef, useEffect, FC } from 'react';
+import React, { useRef, useEffect } from 'react';
 
 interface useClickOutsideProps {
   callBack: any;
@@ -11,8 +11,8 @@ export const useClickOutside = ({
 }: useClickOutsideProps): React.RefObject<HTMLDivElement> => {
   const domNode = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    let eventHandler = (event: any) => {
-      if (open && !domNode.current?.contains(event.target)) {
+    let eventHandler = (event: MouseEvent) => {
+      if (open && !domNode.current?.contains(event.target as Node)) {
         callBack();
       }
     };
