@@ -4,6 +4,7 @@ import { Hamburger } from '../components/Hamburger';
 // import { MySitesLinks } from 'utils';
 import { ProfileLinks } from '../components/ProfileLinks';
 import { Menu } from '../components/Menu';
+import { useClickOutside } from 'hooks/useClickOutside';
 
 export const Header: FC<{}> = (): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false);
@@ -17,24 +18,16 @@ export const Header: FC<{}> = (): JSX.Element => {
     }
   });
 
-  const handleOpenMenu = useCallback<() => void>(() => {
+  const handleToggleMenu = useCallback<() => void>(() => {
     setOpen((open) => !open);
   }, [setOpen]);
 
-  const menuRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    let handler = (event: any) => {
-      if (!menuRef.current?.contains(event.target)) {
-        setOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handler);
-    return () => {
-      document.removeEventListener('mousedown', handler);
-    };
-  }, []);
+  const domNode = useClickOutside({
+    callBack: () => {
+      setOpen(false);
+    },
+    open: open,
+  });
 
   return (
     <header>
@@ -44,13 +37,13 @@ export const Header: FC<{}> = (): JSX.Element => {
           {hideMenu ? (
             <ProfileLinks />
           ) : (
-            <Hamburger handleOpenMenu={handleOpenMenu} open={open} />
+            <Hamburger handleToggleMenu={handleToggleMenu} open={open} />
           )}
         </Flex>
         <Divider variant={'styles.hr'} />
 
         {!hideMenu && (
-          <Box ref={menuRef}>
+          <Box ref={domNode}>
             <Menu open={open} />
           </Box>
         )}

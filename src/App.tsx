@@ -3,7 +3,6 @@ import { Header } from 'pages/Header';
 import { Main } from 'pages/Main';
 import { ThemeProvider, Flex } from 'theme-ui';
 import { theme } from './theme';
-import './App.scss';
 
 interface AppProps {}
 

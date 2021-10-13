@@ -6,7 +6,7 @@ interface MenuProps {
   open: boolean;
 }
 
-export const Menu: FC<MenuProps> = ({ open }) => {
+export const Menu: FC<MenuProps> = ({ open }): JSX.Element => {
   return (
     <Flex variant={open ? 'styles.menu.open' : 'styles.menu'}>
       <ProfileLinks flexFlowProp={'column'} />

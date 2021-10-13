@@ -1,15 +1,17 @@
 import React, { FC } from 'react';
+import './Hamburger.scss';
 
 interface HamburgerProps {
-  handleOpenMenu: () => void;
+  handleToggleMenu: () => void;
   open: boolean;
 }
 
-export const Hamburger: FC<HamburgerProps> = ({ handleOpenMenu, open }) => {
+export const Hamburger: FC<HamburgerProps> = ({ handleToggleMenu, open }) => {
   return (
     <button
-      onClick={handleOpenMenu}
+      onClick={handleToggleMenu}
       className={`hamburger hamburger--collapse ${open ? 'is-active' : ''}`}
+      type={'button'}
     >
       <span className='hamburger-box'>
         <span className='hamburger-inner'></span>
