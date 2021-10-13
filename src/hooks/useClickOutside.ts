@@ -1,18 +1,24 @@
 import React, { useRef, useEffect } from 'react';
 
 interface useClickOutsideProps {
+  hamburgerRef: React.RefObject<HTMLDivElement>;
   callBack: any;
   open: boolean;
 }
 
 export const useClickOutside = ({
+  hamburgerRef,
   callBack,
   open,
 }: useClickOutsideProps): React.RefObject<HTMLDivElement> => {
   const domNode = useRef<HTMLDivElement>(null);
   useEffect(() => {
     let eventHandler = (event: MouseEvent) => {
-      if (open && !domNode.current?.contains(event.target as Node)) {
+      if (
+        open &&
+        !hamburgerRef.current?.contains(event.target as Node) &&
+        !domNode.current?.contains(event.target as Node)
+      ) {
         callBack();
       }
     };

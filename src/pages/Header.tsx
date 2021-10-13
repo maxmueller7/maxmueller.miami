@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useState } from 'react';
+import React, { FC, useCallback, useRef, useState } from 'react';
 import { Box, Container, Divider, Flex, Paragraph } from 'theme-ui';
 import { Hamburger } from '../components/Hamburger';
 // import { MySitesLinks } from 'utils';
@@ -22,11 +22,14 @@ export const Header: FC<{}> = (): JSX.Element => {
     setOpen((open) => !open);
   }, [setOpen]);
 
+  const hamburgerRef = useRef<HTMLDivElement>(null);
+
   const domNode = useClickOutside({
+    hamburgerRef,
     callBack: () => {
       setOpen(false);
     },
-    open: open,
+    open,
   });
 
   return (
@@ -37,7 +40,9 @@ export const Header: FC<{}> = (): JSX.Element => {
           {hideMenu ? (
             <ProfileLinks />
           ) : (
-            <Hamburger handleToggleMenu={handleToggleMenu} open={open} />
+            <Box ref={hamburgerRef}>
+              <Hamburger handleToggleMenu={handleToggleMenu} open={open} />
+            </Box>
           )}
         </Flex>
         <Divider variant={'styles.hr'} />
