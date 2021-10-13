@@ -3,12 +3,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, Flex } from 'theme-ui';
 import { MySites, mySites } from 'utils';
 
-export const ProfileLinks: FC<{}> = (): JSX.Element => {
+interface ProfileLinksProps {
+  flexFlowProp?: string;
+}
+
+export const ProfileLinks: FC<ProfileLinksProps> = ({
+  flexFlowProp,
+}): JSX.Element => {
   return (
     <ul style={{ padding: 0, margin: 0, border: 0 }}>
       <Flex
         sx={{
           display: 'flex',
+          flexFlow: flexFlowProp || 'row',
         }}
       >
         {mySites.map((site: MySites) => (

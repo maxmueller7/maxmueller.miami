@@ -1,6 +1,4 @@
 .hamburger {
-  padding: 15px 15px;
-  display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
   transition-duration: 0.15s;
@@ -11,7 +9,9 @@
   background-color: transparent;
   border: 0;
   margin: 0;
+  padding: 0;
   overflow: visible;
+  display: inline-block;
 }
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
@@ -22,7 +22,7 @@
 .hamburger-box {
   width: 40px;
   height: 24px;
-  display: inline-block;
+  display: flex;
   position: relative;
   background-color: transparent;
 }
@@ -30,7 +30,6 @@
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px;
 }
 .hamburger-inner,
 .hamburger-inner::before,

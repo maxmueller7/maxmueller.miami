@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Header } from 'components/Header';
+import { Header } from 'pages/Header';
 import { Main } from 'pages/Main';
 import { ThemeProvider, Flex } from 'theme-ui';
 import { theme } from './theme';

@@ -217,6 +217,19 @@ export const theme: Theme = {
       borderBottomStyle: 'solid',
     },
     header: {
+      headerContainer: {
+        display: 'flex',
+        flexFlow: 'column',
+        alignItems: 'center',
+        height: '100vh',
+        width: '85vw',
+      },
+      headerContent: {
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        width: '100%',
+        py: '40px',
+      },
       alignItems: 'center',
       backgroundColor: 'white',
       color: 'primary',
@@ -229,6 +242,22 @@ export const theme: Theme = {
       fontSize: 3,
       flexShrink: 1,
       justifyContent: 'flex-start',
+    },
+    menu: {
+      bg: (theme) => theme.colors?.background,
+      position: 'fixed',
+      zIndex: '200',
+      p: 2,
+      transform: 'translateY(0%)',
+      transition: 'transform 0.3s ease-out',
+      open: {
+        bg: (theme) => theme.colors?.background,
+        position: 'fixed',
+        zIndex: '200',
+        p: 2,
+        transform: 'translateY(150%)',
+        transition: 'transform 0.3s ease-out',
+      },
     },
   },
   cards: {
